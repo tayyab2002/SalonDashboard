@@ -12,7 +12,7 @@ const AdminAuth = ({ children }) => {
     }
     try {
       const response = await axios.post(
-        `http://localhost:5000/v1/admin/admin-signIn`,
+        `https://backend-production-ade0.up.railway.app/v1/admin/admin-signIn`,
         adminValue,
         {
           headers: {
