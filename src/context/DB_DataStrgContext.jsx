@@ -21,7 +21,7 @@ const DB_DataStorage = ({ children }) => {
   const empDetails = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/v1/emp/all_employees"
+        "https://backend-production-ade0.up.railway.app/v1/emp/all_employees"
       );
       const data = await response.data;
       setEmpData(data);
